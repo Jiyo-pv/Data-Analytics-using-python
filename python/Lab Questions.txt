@@ -1,0 +1,238 @@
+﻿1. Check whether the given string can be used as a valid variable name in Python.
+Explanation:
+In Python, a valid variable name:
+* Can only contain letters (a–z, A–Z), digits (0–9), and underscores (_).
+* The variable name cannot begin with a digit.
+* The string cannot contain reserved keywords such as "for," "if," "class," and so on.
+
+
+2.  We provide you with a list of integers. In this list, every number appears twice, except for one number that appears only once. Your task is to find that single, unique number.
+Example:
+If the list is [4, 1, 2, 1, 2], the unique number is 4. If the list is [7, 3, 5, 4, 5, 3, 4], the unique number is 7.
+Constraints:
+You should try to solve this with a time complexity of O(n) (linear time).
+You should try to solve this without using extra space (O(1) space complexity), meaning no additional data structures like hash maps or sets.
+
+
+3. Write a Python program that defines a function named process_string() that:
+* Accepts a string input from the user.
+* Prints the string in uppercase and lowercase.
+* Displays the length of the string.
+* Reverses the string using slicing and prints the result.
+* check whether the given string is palindrome or not
+             Then, call the function to execute these operations.
+
+
+
+
+
+
+
+
+
+
+Note on Slicing
+String slicing in Python is a way to extract a portion of a string by specifying a start and end index. It uses the format string[start:end], where: 
+Start is the index where slicing begins (inclusive).
+end is the index where slicing ends (exclusive).
+If start is omitted, it defaults to the beginning of the string. If end is omitted, it defaults to the end of the string. 
+Negative indices can also be used: -1 is the last character, -2 is the second to last, etc.
+A third optional parameter, step, can be added to control the characters included in the slice. For example, string[start:end:step]. A step of 2 would select every second character, while a step of -1 would reverse the string.
+
+
+4. Write a menu-driven program that performs the following operations on strings:
+   *   Check if the string is a substring of another string.
+   *  Count Occurrences of Character
+   *  Replace a substring with another substring
+   *  Convert to Capital Letters
+5. Build a menu-driven application that uses the data structure dictionary to create, update, search, and delete phonebook entries. 
+6.  Create a simple calculator in Python. 
+7. You are managing a conference with multiple sessions.
+You have the following data:
+   * Set A: Registered attendees for the "AI & Data Science" session
+   * Set B: Registered attendees for the "Cybersecurity" session
+Write a Python program to: 
+   * Collect input from the user. 
+   * List all unique attendees (those who registered for any session)
+   * List attendees who registered for both sessions
+   * List attendees who registered only for "AI & Data Science."
+   * List attendees who registered only for "Cybersecurity."
+
+
+Question 8: Number Analyzer Challenge
+Your task is to develop a program that performs a comprehensive analysis of an integer provided by the user. For a given input number, your program should determine and clearly state whether it exhibits the following properties.
+Important: For each property, you must implement a separate function to perform the check.
+   * Even or Odd: Is the number perfectly divisible by two?
+   * Palindrome: Does the number read the same forwards and backward (e.g., 121, 343)?
+   * Armstrong: Is the number equal to the sum of its own digits, each raised to the power of the number of digits (e.g., for a 3-digit number like 153, it's 1+125+27=153)?
+   * Prime: Is the number a natural number greater than 1 that has no positive divisors other than 1 and itself (e.g., 2, 3, 5, 7, 11)?
+   * Perfect: Is the number a positive integer that is equal to the sum of its proper positive divisors (i.e., its divisors excluding the number itself, e.g., 6 because 1+2+3=6)?
+
+
+Question 9: Dynamic Greeting Generator (Variable-Length Arguments)
+   * Scenario: You want to create a greeting system that can greet a single person or a group of people.
+   * Task:
+   1. Define a function greet_people() that can accept any number of name arguments.
+   2. Inside the function, if no names are provided, print "Hello, stranger!"
+   3. If one name is provided, print "Hello, [Name]!"
+   4. If multiple names are provided, print "Hello, [Name1], [Name2], and [Name3]!" (Adjust for any number of names).
+   5. Test your function with:
+   * greet_people()
+   * greet_people("Alice")
+   * greet_people("Bob", "Charlie")
+   * greet_people("David", "Eve", "Frank")
+
+
+Question 10: Password Strength Checker ()
+   * Scenario: You're developing a simple password strength checker.
+   * Task:
+   1. Prompt the user to enter a password.
+   2. Implement the following conditions for password strength:
+   * At least 8 characters long.
+   * The password must contain at least one digit.
+   * The password must contain at least one uppercase letter.
+   * The password must contain at least one lowercase letter.
+   * The password must also include at least one special character.
+   3. Print "Strong Password" if all conditions are met; otherwise, print "Weak Password" and indicate which conditions are missing.
+
+
+Question 11: Recursive Functions - Sum & Factorial
+Task: Implement two recursive Python functions for a given non-negative integer n:
+   * Calculates the sum of all natural numbers from 1 to n.
+   * Calculates n!.
+Test your functions with:
+   * n=5
+   * n=10
+   * n=18
+
+
+Question 12: Modular Text Analysis Toolkit
+Task: Build a text analysis toolkit using Python modules.
+Structure:
+your_project_folder/
+├── text_preprocessor.py
+├── text_analyzer.py
+└── main_analyzer.py
+Module Specs:
+   1. text_preprocessor.py:
+   * normalize_text(text): lowercase, remove punctuation.
+   * tokenize_text(text): split into words.
+   2. text_analyzer.py:
+   * word_frequency(word_list): count word occurrences.
+   * character_count(text): count alphabetic chars.
+   * unique_word_count(word_list): count unique words.
+   3. main_analyzer.py:
+   * Import and use functions from other modules.
+   * Prompt for text.
+   * Display: Original, Normalized, Tokens, Word Frequency, Total Char Count, Unique Word Count.
+   * Print docstring of the functions
+Requirements: Modularity, proper imports, docstrings, type hinting, readable code.
+Question 13:
+Create a class Student with attributes name, roll_number, and course. Define an __init__ method to initialize these attributes and a method display() to print them.
+
+
+Question 14:
+Define a class Circle with attribute radius. Create a method get_area() to return the area and another method get_circumference() to return the circumference.
+Formula:
+Area = π × radius²
+Circumference = 2 × π × radius
+
+
+Question 15:
+Create a class Employee with attributes emp_id, name, basic_pay. Add a method calculate_salary() that calculates gross salary as:
+Gross = Basic Pay + HRA (20%) + DA (10%).
+Then display the salary details.
+
+
+Question 16:
+Create a class SmartCalculator that demonstrates simulated method overloading using different approaches:
+
+
+   * Implement a method add() that:
+
+
+   * Adds two numbers if two are given.
+   * Adds three numbers if three are given (use default arguments).
+
+
+   * Implement a method multiply() that:
+   * Accepts any number of arguments using *args and returns their product.
+
+
+   * Implement a method process() that behaves differently based on the type of the argument:
+
+
+   * If the argument is a string, print it in uppercase.
+   * If the argument is a list of numbers, print the sum of the numbers.
+Finally, create objects of the class and demonstrate all three features with suitable examples.
+
+
+
+
+Question 17:
+Create a class ComplexNumber with attributes real and imag.
+
+
+   * Overload the + operator to add two complex numbers.
+   * Overload the == operator to check if two complex numbers are equal.
+   * Demonstrate these operations using suitable examples.
+
+
+
+
+
+
+Question 18:
+
+
+   * Create a class Vehicle with attributes brand and model and a method display_info() that prints these details.
+   * Derive a class Car that adds an attribute seating_capacity and overrides display_info() to include this extra detail.
+   * Create objects of both classes and demonstrate how method overriding works.
+   * Use super() in the derived class to call the base class method before adding extra information.
+
+
+Question 19: 
+Read and Analyze Text File
+Write a program to read a .txt file and:
+   * Count the number of lines, words, and characters.
+   * Display the top 5 most frequent words with their frequencies.
+   * Handle file not found and permission errors.
+
+
+Question 20: 
+Custom Exception: Invalid Age
+Write a class InvalidAgeException that inherits from Exception.
+   * Create a function that accepts user input for age and throws the exception if the age is not between 18 and 60.
+   * Handle the exception and display appropriate messages.
+
+
+Question 21: Try-Except-Else-Finally Flow Demonstration
+Write a program where:
+   * You simulate a transaction (like withdrawing money from an account).
+   * Demonstrate use of try, except, else, and finally blocks clearly.
+
+
+Question 22: Date Format Converter
+Write a program that:
+   * Accepts a date in dd-mm-yyyy format.
+   * Converts and displays it in MonthName dd, yyyy format.
+   * Handles exceptions for invalid date formats or out-of-range values
+
+
+
+QUESTION 23: CSV Data Analysis
+Write a program to read a CSV file containing rainfall data with columns: Date, Station, and Rainfall (mm). Using NumPy, compute:
+   * Average rainfall per station
+   * Maximum rainfall recorded and the date
+   * Standard deviation of rainfall
+   * Finally, save the computed results into a new CSV file.
+[Use the CSV library.]
+
+
+Question 24:
+Write a Python program that does the following:
+   * Create a CSV file named students.csv with the following columns:Roll_No, Name, Marks
+   * Insert at least 5 student records into         the file.
+   * Read the data from the CSV file and display:
+   * The student with the highest marks.
+   * The average marks of the class.
