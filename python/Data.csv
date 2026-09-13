@@ -1,0 +1,7 @@
+Age,Salary,Department,Experience,Remote
+24,42000,IT,1,Yes
+31,58000,HR,5,No
+,,IT,3,Yes
+45,72000,Sales,12,No
+29,51000,,4,Yes
+38,68000,IT,,No

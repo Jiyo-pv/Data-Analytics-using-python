@@ -8,13 +8,12 @@ config = {
     'host': 'localhost',
     'user': 'root',
     'password': '',  # Change to your MySQL password
-    'database': 'employee_db'
 }
 
-def connect_db():
+def connect_db(connection_config):
     """Establish connection with MySQL database"""
     try:
-        conn = mysql.connector.connect(**config)
+        conn = mysql.connector.connect(**connection_config)
         if conn.is_connected():
             print("Connected to MySQL database")
             return conn
@@ -226,14 +225,6 @@ def menu(conn):
         
         else:
             print("Invalid choice. Please try again.")
-
-# Execute the program
-config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': 'your_password',
-    'database': 'employee_db'
-}
 
 try:
     conn = connect_db(config)

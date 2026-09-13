@@ -1,0 +1,11 @@
+Date,Station,Rainfall(mm)
+2024-01-01,Station A,45.2
+2024-01-02,Station A,52.3
+2024-01-01,Station B,38.5
+2024-01-02,Station B,41.2
+2024-01-03,Station A,65.8
+2024-01-03,Station B,55.3
+2024-01-04,Station C,72.4
+2024-01-04,Station A,48.9
+2024-01-05,Station C,61.2
+2024-01-05,Station B,44.7
