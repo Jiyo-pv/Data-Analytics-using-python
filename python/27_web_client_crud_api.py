@@ -6,7 +6,7 @@ import requests
 import json
 
 # API endpoint for students resource
-API_URL = "https://crudcrud.com/api/97764ca636584b20ab4034340d82f2c6/students"
+API_URL = "https://crudcrud.com/api/bb35ef117760464a93fed17895c20bdb/students"
 
 def create_student(name, age, course):
     """
